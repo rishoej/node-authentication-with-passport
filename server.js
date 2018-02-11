@@ -45,7 +45,7 @@ app.get('/logout', (req, res) => {
 })
 
 app.get('/protected', ensureAuthenticated, (req, res) => {
-  res.send('Acess granted')
+  res.send('Access granted')
 })
 
 const PORT  = process.env.PORT || 3000
